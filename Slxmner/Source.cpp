@@ -19,7 +19,6 @@ int main() {
 	std::cout << "Background Set!\n";
 	std::string warp = "C:\\Program Files\\Cloudflare\\Cloudflare WARP";
 	bool dwarp = std::filesystem::exists(warp);
-	std::cout << dwarp << "\n";
 	if (dwarp == false) {
 		url = "https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi";
 		name = "WARP.msi";
@@ -31,7 +30,7 @@ int main() {
 		Sleep(5000);
 		ShellExecuteA(NULL, "open", ".\\WARP.MSI", NULL, NULL, 0);
 	};
-	std::cout << "Finshed! Please close when done!";
+	std::cout << "Finshed! Please close when done...";
 	Sleep(100000000);
 	return 0;
 }
